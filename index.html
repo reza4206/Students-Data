@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data App</title>
+    <link rel="stylesheet" href="styles.css">
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <div class="container">
+        <img src="https://rezapoint.files.wordpress.com/2015/06/kkkkkk.png" alt="My Students" width="200" height="60">
+        <h2>Students Data Entry Form</h2>
+        <form id="studentForm"><b>
+            <label for="serialNumber">S/N:</label>
+            <input type="text" id="serialNumber" name="serialNumber" required>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="class">Class:</label>
+            <input type="text" id="class" name="class" required>
+            <label for="batch">Batch:</label>
+            <input type="text" id="batch" name="batch">
+            <label for="collegeName">College:</label>
+            <input type="text" id="collegeName" name="collegeName" required>
+            <label for="roll">Roll:</label>
+            <input type="text" id="roll" name="roll">
+            <label for="year">Year:</label>
+            <input type="text" id="year" name="year" required>
+            
+            <label for="photo">Photo link:</label>
+            <input type="url" id="photo" name="photo"></b>
+            <button type="submit">Submit</button>
+            <button type="button" id="clearBtn">Clear</button>
+        </form>
+        <div id="successMessage" class="success-message"></div>
+
+        <button type="button" id="showDataBtn" class="show-data-btn">Show Students List</button> <br>
+        <table id="dataTable" class="hidden">
+            <tr id="tableHeaders">
+            <th>S/N</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Batch</th>
+            <th>College</th>
+            <th>Roll</th>
+            <th>Year</th>
+            
+            <th>Photo</th>
+            </tr>
+        </table>
+
+            <!-- Table will be populated dynamically -->
+        </table>
+    </div>
+    <script src="script.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
